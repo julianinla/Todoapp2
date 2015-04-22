@@ -9,7 +9,24 @@
 		<div class="wrap">
 			<div class="task-list">
 				<ul>
-					<?php require("includes/connect.php"); ?>
+					<?php 
+						
+						require("includes/connect.php");
+
+						$mysqli = new mysqli("localhost", "root", "root", "tasks");
+						$query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";
+
+						if ($result = $mysqli->query($query)) {
+							$numrows = result->numrows;
+							if ($numrows>0) {
+								while($row = $result->fetch_assoc()) {
+									$task_id = $row['id'];
+									$task_name = $row['task'];
+								}
+							}
+						}
+						
+					?>
 				</ul>
 			</div>
 			<form class="add-new-task" autocomplete="off">
@@ -19,6 +36,7 @@
 	</body>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
+
 		add_task();
 		
 		function add_task() {
@@ -43,6 +61,6 @@
 				});
 			});
 		});
-		
+
 	</script>
 </html>
