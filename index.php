@@ -20,6 +20,7 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
 		add_task();
+		
 		function add_task() {
 			$('.add-new-task').submit(function() {
 				var new_task = $('.add-new-task input[name=new-task]').val();
