@@ -21,7 +21,32 @@ body {
 	min-height: 300px;
 	background: #fff;
 	box-shadow: 2px 2px 0px #ddd;
-	margin-top: 40px;
+	margin-top: 20px;
 	padding: 22px 6%;
 }
 /* design for task list box*/
+
+a {
+	text-align: right;
+	margin-right: 30px;
+	padding: 15px;
+	text-decoration: none;
+	color: #999;
+}
+
+.links {
+	margin-left: 1000px;
+	padding: 15px;
+}
+
+.form {
+	margin: 0px 0px 0px 535px;
+}
+
+.align {
+	text-align: center;
+}
+
+.submitbutton {
+	margin-left: 115px
+}
