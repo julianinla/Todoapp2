@@ -50,3 +50,34 @@ a {
 .submitbutton {
 	margin-left: 115px
 }
+
+@media (max-width: 1125px) {
+  	.wrap {
+		width: 900px;
+		height: 1850px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	body {
+		font-size: 75px;
+	}
+	.links {
+		margin-left: 0px;
+		display: inline-block;
+		font-size: 50px !important;
+		text-align: center;
+	}
+	a {
+		margin: 0px 125px 0px 0px;
+	}
+	.add-new-task {
+		width: 900px;
+	}
+	.form {
+		text-align: center;
+		margin: 0px 0px 0px 0px;
+	}
+	.delete-button {
+		width: 50px;
+	}
+}
